@@ -1,11 +1,12 @@
-function showMessage() {
-  // Get input value
-  const message = document.getElementById("userInput").value;
+document.querySelector(".in").addEventListener("keydown",(Event)=>{
+    if(Event.key==="Enter")
+    {Msg1()}
+})
 
-  // Display it in the output paragraph
-  if (message.trim() === "") {
-    document.getElementById("output").innerText = "Please enter a message!";
-  } else {
-    document.getElementById("output").innerText = "You entered: " + message;
-  }
+document.querySelector(".btn").addEventListener("click",()=>{Msg1();})
+function Msg1(){
+var message=document.querySelector(".in").value
+var mesg1=message.toUpperCase()
+
+document.querySelector(".out").innerHTML= "THE MESSAGE IS " + mesg1
 }

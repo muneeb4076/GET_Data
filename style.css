@@ -1,53 +1,93 @@
-/* Reset default margin and padding */
+/* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background: #b7d4de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-  background-color: white;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
+    border-radius: 10px;
+    border: 100px solid black;
+    padding: 25px 90px 25px;
+    background-color: #bcd1d8;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
 }
 
-input[type="text"] {
-  padding: 10px;
-  width: 80%;
-  margin: 15px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.message {
+    /* display: flex; */
+    /* flex-direction: column; */
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 25px 90px 25px;
+    background-color: #bcd1d8;
+    width: 100%;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+.heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
-button:hover {
-  background-color: #0056b3;
+.para {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
 }
 
-#output {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #333;
+.input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #fafafa;
+}
+
+.input i {
+    color: #888;
+    margin-right: 10px;
+}
+
+.input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.btn {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    background-color: #b57cb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.out {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    min-height: 1.5rem;
 }

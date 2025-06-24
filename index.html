@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Message Display App</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></script>
+    <title>PASS MESSAGE</title>
+  </head>
+  <body>
+    <div class="contrainer">
+      <div class="message">
+        <h3 class="heading">Pass the Message</h3>
+        <p class="para">Enter Message</p>
+        <div class="input">
+          <i class="fa-solid fa-message"></i>
+          <input class="in" type="text" />
+        </div>
+        <button class="btn">Submit</button>
+        <output class="out"> </output>
+      </div>
+    </div>
 
-  <div class="container">
-    <h1>Enter Your Message</h1>
-    
-    <!-- Input Field -->
-    <input type="text" id="userInput" placeholder="Type your message here..." />
-
-    <!-- Button -->
-    <button onclick="showMessage()">Show Message</button>
-
-    <!-- Output Area -->
-    <p id="output"></p>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
